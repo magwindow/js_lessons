@@ -21,5 +21,4 @@ const bruce = {
     age: 24
 }
 
-const fnBruceInfoLog = person.loginfo.bind(bruce)
-fnBruceInfoLog('developer', '123456789')
+const fnBruceInfoLog = person.loginfo.bind(bruce, 'developer', '123456789')()
