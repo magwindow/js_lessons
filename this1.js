@@ -21,4 +21,19 @@ const bruce = {
     age: 24
 }
 
-const fnBruceInfoLog = person.loginfo.bind(bruce, 'developer', '123456789')()
+//person.loginfo.bind(bruce, 'developer', '123456789')()
+//person.loginfo.call(bruce, 'developer', '123456789')
+person.loginfo.apply(bruce, ['developer', '123456789'])
+
+///==========================
+
+const array = [1,2,3,4,5]
+
+function multBy(arr, n) {
+    return arr.map(function(i) {
+        return i*n
+    })
+}
+
+console.log(multBy(array, 5))
+
